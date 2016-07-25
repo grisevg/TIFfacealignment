@@ -1,0 +1,23 @@
+# Visual Studio Project Files
+*.vcxproj*
+*.sln
+.vs/
+*.sdf
+
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+build/
+
+
+# JetBrains IDEs
+.idea
+
+
+# OSX
+.DS_Store
+
+# Project Specific
+imagelist_TIF_result.txt
