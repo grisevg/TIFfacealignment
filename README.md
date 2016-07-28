@@ -22,6 +22,14 @@ For **sheep facial landmarks localisation**:
 * $ make -f Makefile_sheep
 * $ ./TIF_sheep Model/sheep_8p.dat imagelist.txt 
 
+To build on Windows with Visual Studio 2015:
+
+* Download and build OpenCV3.1 binaries. Set `path\to\opencv3\build\x64\vc14\lib` to `OpenCV_DIR` environmental variable and copy `path\to\opencv3\build\include` there
+* Download Boost, run `bootstrap.bat` and then `b2 ddress-model=64` to build 64bit boost
+* ./win64.bat to generate VS2015 x64 solution
+* Don't forget to copy OpenCV3.1 dlls from `path\to\opencv3\build\x64\vc14\bin` to wherever the exe is
+
+
 Then you will see the localisation results in each image. If you want to speed it up, change cv::waitKey(1000) to cv::waitKey(1) in facealignment.cpp. 
 After running the code, the result will be saved to *filename*_result.txt 
 
